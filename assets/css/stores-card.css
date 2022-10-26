@@ -1,0 +1,87 @@
+.stores-card {
+  height: 100%;
+  max-width: 296px;
+}
+
+.stores-card__img-link {
+  display: block;
+
+  transition: all 0.3s;
+}
+
+.stores-card__img-link:hover {
+  opacity: 0.6;
+}
+
+.stores-card__img-link:active {
+  opacity: 0.3;
+}
+
+.stores-card__content {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 294px);
+  padding: 15px 0 0 11px;
+
+  border: 1px solid var(--color-mercury);
+}
+
+.stores-card__link {
+  margin-bottom: auto;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-cardinal);
+
+  transition: all 0.3s;
+}
+
+.stores-card__link:hover {
+  opacity: 0.6;
+}
+
+.stores-card__link:hover {
+  opacity: 0.3;
+}
+
+.stores-card__title {
+  margin-top: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.stores-card__content-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.stores-card__brands ul {
+  padding: 0;
+  padding-top: 10px;
+  margin: 0;
+
+  list-style: none;
+}
+
+.stores-card__brands a {
+  display: block;
+
+  font-family: var(--font-garamond);
+  font-weight: 700;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-mineShaft);
+
+  transition: all 0.3s;
+}
+
+.stores-card__brands a:hover {
+  opacity: 0.6;
+}
+
+.stores-card__brands a:active {
+  opacity: 0.3;
+}

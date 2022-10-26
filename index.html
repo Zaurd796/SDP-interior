@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SDP-interior</title>
+
+  <!--  Шрифты -->
+  <link rel="stylesheet" href="/assets/fonts/futuraBookC/style.css">
+  <link rel="stylesheet" href="/assets/fonts/futuraBookCTT-Normal/style.css">
+  <link rel="stylesheet" href="/assets/fonts/garamond/style.css">
+  <link rel="stylesheet" href="/assets/fonts/goldman/style.css">
+
+  <!--  Базовые стили сайта -->
+  <link rel="stylesheet" href="/vendor/normalize.css">
+  <link rel="stylesheet" href="/vendor/swiper-bundle.css">
+  <link rel="stylesheet" href="/assets/fonts/fontello/css/fontello.css">
+
+  <!--  Стили шаблона. Лучше описывать в одном файле-->
+  <link rel="stylesheet" href="/assets/css/template_styles.css">
+
+
+  <!--  Стили страницы -->
+  <link rel="stylesheet" href="/assets/css/site-main.css">
+  <link rel="stylesheet" href="/assets/css/first.css">
+  <link rel="stylesheet" href="/assets/css/circle.css">
+  <link rel="stylesheet" href="/assets/css/products.css">
+  <link rel="stylesheet" href="/assets/css/title.css">
+  <link rel="stylesheet" href="/assets/css/products-filter.css">
+  <link rel="stylesheet" href="/assets/css/product-card.css">
+  <link rel="stylesheet" href="/assets/css/specials.css">
+  <link rel="stylesheet" href="/assets/css/specials-card.css">
+  <link rel="stylesheet" href="/assets/css/stores.css">
+  <link rel="stylesheet" href="/assets/css/stores-card.css">
+  <link rel="stylesheet" href="/assets/css/info.css">
+  <link rel="stylesheet" href="/assets/css/footer.css">
+  <link rel="stylesheet" href="/assets/css/socials.css">
+  <link rel="stylesheet" href="/assets/css/arrow.css">
+
+</head>
+
+<body>
+  <div id="panel"></div>
+  <div class="site">
+    <header class="site__header">
+      <div class="header">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__top-inner">
+              <div class="header__logo">
+                <span class="logo">
+                  <picture>
+                    <source srcset="/assets/images/logo-mobile.svg" media="(max-width: 650px)">
+                    <img class="logo__img" src="/assets/images/logo-desktop.svg" alt="logo">
+                  </picture>
+                </span>
+              </div>
+              <nav class="header__nav">
+                <ul class="nav-list">
+                  <li class="nav-list__item nav-list__item--company">
+                    <a class="nav-list__link" href="#">
+                      О Компании
+                    </a>
+                  </li>
+                  <li class="nav-list__item nav-list__item--news">
+                    <a class="nav-list__link" href="#">
+                      Новости
+                    </a>
+                  </li>
+                  <li class="nav-list__item nav-list__item--design">
+                    <a class="nav-list__link" href="#">
+                      Архитекторам
+                    </a>
+                  </li>
+                  <li class="nav-list__item nav-list__item--partners">
+                    <a class="nav-list__link" href="#">
+                      Партнёры
+                    </a>
+                  </li>
+                  <li class="nav-list__item nav-list__item--events">
+                    <a class="nav-list__link" href="#">
+                      Мероприятия
+                    </a>
+                  </li>
+                  <li class="nav-list__item nav-list__item--info">
+                    <a class="nav-list__link" href="#">
+                      Информация
+                    </a>
+                  </li>
+                  <li class="nav-list__item nav-list__item--contacts">
+                    <a class="nav-list__link" href="#">
+                      Контакты
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="header__form">
+                <form class="form" action="#">
+                  <input class="form__input" type="text" name="input"
+                    placeholder="для поиска по сайту введите фразу здесь">
+                  <button class="form__button" type="submit">
+                    <i class="icon-search"></i>
+                  </button>
+                </form>
+              </div>
+              <div class="header__mail">
+                <a class="mail" href="mailto:info@sdp-interior.ru">
+                  <span class="mail__icon icon-mail"></span>
+                  <span class="mail__link">info@sdp-interior.ru</span>
+                </a>
+              </div>
+              <div class="header__cart">
+                <a class="cart icon-shopping-basket" href="#"></a>
+              </div>
+              <div class="header__phone">
+                <a class="phone" href="tel:84994509490">
+                  <span class="phone__icon icon-phone"></span>
+                  <span class="phone__num">8 499 450 9490</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="container">
+            <div class="header__catalog-list">
+              <ul class="catalog-list">
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">
+                    Кухни
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">
+                    Гардеробные
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">
+                    Бытовая техника
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">
+                    Аксессуары
+                  </a>
+                </li>
+                <li class="catalog-list__item">
+                  <a class="catalog-list__link" href="#">
+                    Свет
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site__main">
+      <div class="site-main">
+        <div class="site-main__first"
+          style="background: linear-gradient(0deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.05)), url('/assets/images/bg-mobile.jpg') center/cover no-repeat var(--color-gallery)">
+          <div class="container">
+            <div class="first">
+              <div class="first__title"><span>Где купить кухню и бытовую технику</span><br> <span>В Москве ?</span>
+              </div>
+            </div>
+          </div>
+          <div class="site-main__first-circle">
+            <div class="circle">
+              <div class="circle__figures">
+                <div class="circle__triangle"></div>
+                <div class="circle__circle"></div>
+                <div class="circle__square"></div>
+              </div>
+              <div class="circle__content">
+                <ul>
+                  <li><a href="#">комплектация интерьеров</a></li>
+                  <li><a href="#">арх.надзор</a></li>
+                  <li><a href="#">комплекты бытовой техники</a></li>
+                  <li><a href="#">эксклюзивные решения</a></li>
+                </ul>
+                <ul>
+                  <li><a href="#">кухня</a></li>
+                  <li><a href="#">бытовая техника</a></li>
+                  <li><a href="#">гардеробная</a></li>
+                  <li><a href="#">ванная</a></li>
+                  <li><a href="#">сантехника</a></li>
+                  <li><a href="#">свет</a></li>
+                  <li><a href="#">аксессуары</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="site-main__products">
+          <div class="container">
+            <section class="products">
+              <div class="products__title">
+                <h2 class="title">В наличии на экспозиции</h2>
+              </div>
+              <div class="products__filter">
+                <div class="products-filter swiper">
+                  <div class="swiper-wrapper">
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">кухни <span>(12)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">гардеробные <span>(22)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">спальни <span>(9)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">кабинеты <span>(4)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">посудомойки <span>(8)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">стиральные машины <span>(5)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">свет <span>(19)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">кабинеты <span>(4)</span></a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">
+                        стиральные машины <span>(5)</span>
+                      </a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">
+                        свет <span>(19)</span>
+                      </a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">
+                        стиральные машины <span>(5)</span>
+                      </a>
+                    </div>
+                    <div class="products-filter__item swiper-slide">
+                      <a class="products-filter__link" href="#">
+                        кабинеты <span>(4)</span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__arrow">
+                <div class="arrow">
+                  <svg width="52" height="8" viewBox="0 0 52 8">
+                    <use xlink:href="/sdp-interior/assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="products__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="products__slider-item swiper-slide">
+                    <div class="products__wrapper">
+                      <div class="product-card">
+                        <a class="product-card__img-link" href="#">
+                          <img src="/assets/images/products.jpg" alt="kitchen">
+                        </a>
+                        <div class="product-card__content">
+                          <a class="product-card__link" href="#">
+                            <p class="product-card__link-text">
+                              Кухня Alta Cucine в современном стиле
+                            </p>
+                          </a>
+                          <div class="product-card__prices">
+                            <p class="product-card__new-price">2 187 800 руб.</p>
+                            <p class="product-card__old-price">5 037 400 руб.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="products__slider-arrow">
+                <div class="arrow">
+                  <svg width="52" height="8" viewBox="0 0 52 8">
+                    <use xlink:href="/assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="site-main__specials">
+          <div class="container">
+            <section class="specials">
+              <div class="specials__title">
+                <h2 class="title">Акции</h2>
+              </div>
+              <div class="specials__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="specials__slider-item swiper-slide">
+                    <div class="specials__wrapper">
+                      <div class="specials-card">
+                        <picture class="specials-card__img">
+                          <source srcset="/assets/images/specials-1-desktop.jpg" media="(min-width: 1440px)">
+                          <img src="/assets/images/specials-1.jpg" alt="card">
+                        </picture>
+                        <a class="specials-card__link" href="#">
+                          <h3 class="specials-card__title">
+                            Духовые шкафы серии CulinArt Gourmet
+                          </h3>
+                        </a>
+                        <p class="specials-card__text">
+                          Универсальная форма Гурмэ от Miele при покупке духового шкафа серии CulinArt Gou...
+                        </p>
+                        <div class="specials-card__arrow">
+                          <div class="specials-card-arrow">
+                            <div class="icon-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="specials__slider-item swiper-slide">
+                    <div class="specials__wrapper">
+                      <div class="specials-card">
+                        <picture class="specials-card__img">
+                          <source srcset="/assets/images/specials-2-desktop.jpg" media="(min-width: 1440px)">
+                          <img src="/assets/images/specials-2.jpg" alt="card">
+                        </picture>
+                        <a class="specials-card__link" href="#">
+                          <h3 class="specials-card__title">
+                            Всё включено!
+                          </h3>
+                        </a>
+                        <p class="specials-card__text">125 циклов стирки в подарок</p>
+                        <div class="specials-card__arrow">
+                          <div class="specials-card-arrow">
+                            <div class="icon-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="specials__slider-item swiper-slide">
+                    <div class="specials__wrapper">
+                      <div class="specials-card">
+                        <picture class="specials-card__img">
+                          <source srcset="/assets/images/specials-3-desktop.jpg" media="(min-width: 1440px)">
+                          <img src="/assets/images/specials-3.jpg" alt="card">
+                        </picture>
+                        <a class="specials-card__link" href="#">
+                          <h3 class="specials-card__title">
+                            Комплект таблеток UltraTabs Al
+                          </h3>
+                        </a>
+                        <p class="specials-card__text">
+                          Идеальное взаимодействие моющего средства и посудомоечной машины
+                        </p>
+                        <div class="specials-card__arrow">
+                          <div class="specials-card-arrow">
+                            <div class="icon-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="specials__slider-item swiper-slide">
+                    <div class="specials__wrapper">
+                      <div class="specials-card">
+                        <picture class="specials-card__img">
+                          <source srcset="/assets/images/specials-1-desktop.jpg" media="(min-width: 1440px)">
+                          <img src="/assets/images/specials-1.jpg" alt="card">
+                        </picture>
+                        <a class="specials-card__link" href="#">
+                          <h3 class="specials-card__title">
+                            Духовые шкафы серии CulinArt Gourmet
+                          </h3>
+                        </a>
+                        <p class="specials-card__text">
+                          Универсальная форма Гурмэ от Miele при покупке духового шкафа серии CulinArt Gou...
+                        </p>
+                        <div class="specials-card__arrow">
+                          <div class="specials-card-arrow">
+                            <div class="icon-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="specials__slider-item swiper-slide">
+                    <div class="specials__wrapper">
+                      <div class="specials-card">
+                        <picture class="specials-card__img">
+                          <source srcset="/assets/images/specials-2-desktop.jpg" media="(min-width: 1440px)">
+                          <img src="/assets/images/specials-2.jpg" alt="card">
+                        </picture>
+                        <a class="specials-card__link" href="#">
+                          <h3 class="specials-card__title">
+                            Всё включено!
+                          </h3>
+                        </a>
+                        <p class="specials-card__text">125 циклов стирки в подарок</p>
+                        <div class="specials-card__arrow">
+                          <div class="specials-card-arrow">
+                            <div class="icon-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="specials__slider-item swiper-slide">
+                    <div class="specials__wrapper">
+                      <div class="specials-card">
+                        <picture class="specials-card__img">
+                          <source srcset="/assets/images/specials-3-desktop.jpg" media="(min-width: 1440px)">
+                          <img src="/assets/images/specials-3.jpg" alt="card">
+                        </picture>
+                        <a class="specials-card__link" href="#">
+                          <h3 class="specials-card__title">
+                            Комплект таблеток UltraTabs Al
+                          </h3>
+                        </a>
+                        <p class="specials-card__text">
+                          Идеальное взаимодействие моющего средства и посудомоечной машины
+                        </p>
+                        <div class="specials-card__arrow">
+                          <div class="specials-card-arrow">
+                            <div class="icon-right"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="specials__slider-arrow">
+                <div class="arrow">
+                  <svg width="52" height="8" viewBox="0 0 52 8">
+                    <use xlink:href="/assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+        <div class="site-main__stores">
+          <div class="container">
+            <section class="stores">
+              <div class="stores__title">
+                <h2 class="title">Салоны</h2>
+              </div>
+              <div class="stores__slider swiper">
+                <div class="swiper-wrapper">
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-1.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Интерьерный салон в ТЦ «Бизнес-Центр ВЭБ.РФ»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">miele</a></li>
+                                <li><a href="#">Kueppersbusch</a></li>
+                                <li><a href="#">villeroy-boch</a></li>
+                                <li><a href="#">Ligne roset</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-2.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Интерьерный салон в ТЦ «Бизнес-Центр ВЭБ.РФ»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">miele</a></li>
+                                <li><a href="#">Kueppersbusch</a></li>
+                                <li><a href="#">villeroy-boch</a></li>
+                                <li><a href="#">Ligne roset</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-3.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Флагманский салон «Warendorf»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">gaggenau</a></li>
+                                <li><a href="#">Kueppersbusch</a></li>
+                                <li><a href="#">warendorf</a></li>
+                                <li><a href="#">Ligne roset</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-4.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Салон техники V ZUG в ТЦ «Бизнес-Центр ВЭБ.РФ»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">V zug</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-1.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Интерьерный салон в ТЦ «Бизнес-Центр ВЭБ.РФ»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">miele</a></li>
+                                <li><a href="#">Kueppersbusch</a></li>
+                                <li><a href="#">villeroy-boch</a></li>
+                                <li><a href="#">Ligne roset</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-2.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Интерьерный салон в ТЦ «Бизнес-Центр ВЭБ.РФ»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">miele</a></li>
+                                <li><a href="#">Kueppersbusch</a></li>
+                                <li><a href="#">villeroy-boch</a></li>
+                                <li><a href="#">Ligne roset</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-3.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Флагманский салон «Warendorf»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">gaggenau</a></li>
+                                <li><a href="#">Kueppersbusch</a></li>
+                                <li><a href="#">warendorf</a></li>
+                                <li><a href="#">Ligne roset</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="stores__slider-item swiper-slide">
+                    <div class="stores__wrapper">
+                      <div class="stores-card">
+                        <a class="stores-card__img-link" href="#">
+                          <img src="/assets/images/stores-4.jpg" alt="card">
+                        </a>
+                        <div class="stores-card__content">
+                          <a class="stores-card__link" href="#">
+                            <h3 class="stores-card__title">
+                              Салон техники V ZUG в ТЦ «Бизнес-Центр ВЭБ.РФ»
+                            </h3>
+                          </a>
+                          <div class="stores-card__content-box">
+                            <div class="stores-card__brands">
+                              <ul>
+                                <li><a href="#">V zug</a></li>
+                              </ul>
+                            </div>
+                            <div class="stores-card__info">
+                              <div class="info">
+                                <p>
+                                  с 10:00 до 22:00 ежедневно, без обеда, праздников и выходных
+                                </p>
+                                <div class="info__mail">
+                                  <span>E-mail:</span>
+                                  <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+                                </div>
+                                <div class="info__phone">
+                                  <span>Телефон:</span>
+                                  <a href="tel:+74955405593">+7 (495) 540-55-93</a>
+                                </div>
+                                <a class="info__map-link" href="#">
+                                  <i class="icon-location"></i>
+                                  <span>Посмотреть на карте</span>
+                                </a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="stores__slider-arrow">
+                <div class="arrow">
+                  <svg width="52" height="8" viewBox="0 0 52 8">
+                    <use xlink:href="/sdp-interior/assets/images/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site__footer">
+      <div class="container">
+        <div class="footer">
+          <div class="footer__logo">
+            <span class="logo">
+              <img class="logo__img" src="/assets/images/footer-logo.svg" alt="logo">
+            </span>
+          </div>
+          <div class="footer__links">
+            <div class="footer__phone">
+              <a class="phone" href="tel:84994509490">8 499 450 9490</a>
+            </div>
+            <div class="footer__mail">
+              <a class="mail" href="mailto:info@sdp-interior.ru">info@sdp-interior.ru</a>
+            </div>
+          </div>
+          <div class="footer__socials-links">
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <picture>
+                    <source srcset="/assets/images/visa-desktop.png" media="(min-width: 1440px)">
+                    <img src="/assets/images/visa-mobile.png" alt="visa logo">
+                  </picture>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <picture>
+                    <source srcset="/assets/images/mc-desktop.png" media="(min-width: 1440px)">
+                    <img src="/assets/images/mc-mobile.png" alt="mc logo">
+                  </picture>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link" href="#">
+                  <picture>
+                    <source srcset="/assets/images/sber-desktop.svg" media="(min-width: 1440px)">
+                    <img src="/assets/images/sber-mobile.svg" alt="sber logo">
+                  </picture>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__wrapper">
+            <div class="footer__copy">
+              <p>
+                Использование материалов разрешено только с предварительного согласия правообладателей.
+                Все права на картинки и тексты принадлежат их авторам
+              </p>
+            </div>
+            <div class="footer__support">
+              <a class="support" href="https://zvezda-studio.ru">
+                <img src="/assets/images/zs.svg" alt="студия звезда">
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="/assets/js/swiper-bundle.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>

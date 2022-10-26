@@ -1,0 +1,23 @@
+.products-filter__link {
+  font-size: 10px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-black);
+
+  transition: all 0.3s;
+}
+
+.products-filter__link:hover {
+  opacity: 0.6;
+}
+
+.products-filter__link:active {
+  opacity: 0.3;
+}
+
+@media(min-width: 1440px) {
+  .products-filter__link {
+    font-size: 12px;
+  }
+}

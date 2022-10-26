@@ -1,0 +1,35 @@
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.socials>*+* {
+  margin-left: 10px;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 500px) {
+  .socials>*+* {
+    margin-left: 4px;
+  }
+}
+
+.socials__link {
+  display: block;
+
+  transition: all 0.3s;
+}
+
+.socials__link:hover {
+  opacity: 0.6;
+}
+
+.socials__link:active {
+  opacity: 0.3;
+}

@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "FuturaBookCTT";
+  font-display: swap;
+  src: url("futuraBookCTT-Normal.woff2") format("woff2"),
+    url("futuraBookCTT-Normal.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}

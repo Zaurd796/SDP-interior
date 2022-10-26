@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Garamond";
+  font-display: swap;
+  src: url("garamond.woff2") format("woff2"),
+    url("garamond.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+}

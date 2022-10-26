@@ -1,0 +1,182 @@
+.footer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 17px 0 15px;
+
+  border-top: 1px solid var(--color-dustyGray);
+}
+
+.footer__logo {
+  margin-right: auto;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 500px) {
+  .footer__logo {
+    margin-right: 9.5%;
+  }
+}
+
+@media(min-width: 670px) {
+  .footer__logo {
+    margin-right: auto;
+  }
+}
+
+@media(min-width: 1440px) {
+  .footer__logo {
+    margin-right: 3.9%;
+  }
+}
+
+@media(min-width: 500px) {
+  .footer__links {
+    margin-right: 9%;
+  }
+}
+
+@media(min-width: 670px) {
+  .footer__links {
+    margin-right: auto;
+  }
+}
+
+@media(min-width: 1440px) {
+  .footer__links {
+    margin-right: 3.9%;
+  }
+}
+
+.footer__phone {
+  margin-bottom: 4px;
+}
+
+.footer__phone a {
+  font-family: var(--font-futuraBookCTT);
+  font-size: 16px;
+  text-decoration: none;
+  color: var(--color-cardinal);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .footer__phone a {
+    font-size: 20px;
+  }
+}
+
+.footer__mail a {
+  font-family: 'FuturaBookCTT';
+  font-size: 15px;
+  text-decoration: none;
+  color: var(--color-mineShaft);
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .footer__mail a {
+    font-size: 18px;
+  }
+}
+
+.footer__phone a:hover,
+.footer__mail a:hover {
+  opacity: 0.6;
+}
+
+.footer__phone a:active,
+.footer__mail a:active {
+  opacity: 0.3;
+}
+
+.footer__socials-links {
+  width: 100%;
+  margin: 10px 0;
+}
+
+@media(min-width: 500px) {
+  .footer__socials-links {
+    width: initial;
+    margin: 0;
+  }
+}
+
+@media(min-width: 1000px) {
+  .footer__socials-links {
+    margin-right: 10px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .footer__socials-links {
+    margin-right: 7.7%;
+  }
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 500px) {
+  .footer__wrapper {
+    margin-top: 9.7%;
+  }
+}
+
+@media(min-width: 500px) {
+  .footer__wrapper {
+    margin-top: 7%;
+  }
+}
+
+@media(min-width: 1000px) {
+  .footer__wrapper {
+    width: initial;
+    margin-top: 0;
+  }
+}
+
+.footer__copy {
+  max-width: 250px;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 500px) {
+  .footer__copy {
+    max-width: 500px;
+  }
+}
+
+@media(min-width: 670px) {
+  .footer__copy {
+    max-width: initial;
+    margin-right: 10px;
+  }
+}
+
+@media(min-width: 1000px) {
+  .footer__copy {
+    max-width: 500px;
+  }
+}
+
+@media(min-width: 1440px) {
+  .footer__copy {
+    max-width: 555px;
+    margin-right: 140px;
+  }
+}
+
+.footer__copy p {
+  margin: 0;
+}

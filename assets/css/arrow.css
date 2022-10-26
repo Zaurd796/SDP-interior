@@ -1,0 +1,11 @@
+.arrow {
+  transition: all 0.3s;
+}
+
+.arrow:hover {
+  fill-opacity: 0.6;
+}
+
+.arrow:active {
+  fill-opacity: 0.3;
+}

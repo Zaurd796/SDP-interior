@@ -1,0 +1,40 @@
+.site-main__first {
+  position: relative;
+  margin-bottom: 50px;
+
+  border-bottom: 7px solid var(--color-cardinal);
+  transition: all 0.3s;
+}
+
+.site-main__first-circle {
+  position: absolute;
+  bottom: -32px;
+  right: -44px;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .site-main__first-circle {
+    bottom: -76px;
+    right: -148px;
+  }
+}
+
+.site-main__products {
+  margin-bottom: 50px;
+
+  transition: all 0.3s;
+}
+
+.site-main__specials {
+  margin-bottom: 50px;
+
+  transition: all 0.3s;
+}
+
+.site-main__stores {
+  margin-bottom: 50px;
+
+  transition: all 0.3s;
+}

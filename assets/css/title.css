@@ -1,0 +1,14 @@
+.title {
+  margin: 0;
+
+  font-size: 20px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--color-mineShaft);
+}
+
+@media(min-width: 1440px) {
+  .title {
+    font-size: 28px;
+  }
+}

@@ -1,0 +1,160 @@
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 275px;
+  min-height: 275px;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .circle {
+    width: 650px;
+    min-height: 650px;
+  }
+}
+
+.circle__figures {
+  align-self: flex-start;
+  margin-right: 27px;
+  padding-top: 27px;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .circle__figures {
+    margin-right: 44px;
+    padding-top: 82px;
+  }
+}
+
+.circle__figures div {
+  margin-bottom: 11px;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .circle__figures div {
+    margin-bottom: 40px;
+  }
+}
+
+.circle__triangle {
+  width: 0;
+  height: 0;
+  border-bottom: 26px solid var(--color-cardinal);
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top: 13px solid transparent;
+}
+
+@media(min-width: 1440px) {
+  .circle__triangle {
+    border-bottom: 80px solid var(--color-cardinal);
+    border-left: 40px solid transparent;
+    border-right: 40px solid transparent;
+    border-top: 40px solid transparent;
+  }
+}
+
+.circle__circle {
+  width: 23px;
+  height: 23px;
+
+  border-radius: 50%;
+  background-color: var(--color-cardinal);
+}
+
+@media(min-width: 1440px) {
+  .circle__circle {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.circle__square {
+  width: 23px;
+  height: 23px;
+
+  background-color: var(--color-cardinal);
+}
+
+@media(min-width: 1440px) {
+  .circle__square {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.circle__content {
+  margin-top: -33px;
+
+  transition: all 0.3s;
+}
+
+@media(min-width: 1440px) {
+  .circle__content {
+    margin-top: -93px;
+  }
+}
+
+.circle__content ul {
+  padding: 0;
+  margin: 0;
+
+  font-family: var(--font-futuraBookCTT);
+  line-height: 1.75;
+  text-transform: uppercase;
+
+
+  list-style: none;
+}
+
+.circle__content ul:first-child {
+  margin-bottom: 5px;
+}
+
+.circle__content ul:last-child {
+  line-height: 1.2;
+}
+
+.circle__content a {
+  display: block;
+  color: var(--color-alto);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.circle__content a:hover {
+  opacity: 0.6;
+}
+
+.circle__content a:active {
+  opacity: 0.3;
+}
+
+.circle__content ul:first-child a {
+  font-size: 8px;
+}
+
+@media(min-width: 1440px) {
+  .circle__content ul:first-child a {
+    font-size: 14px;
+  }
+}
+
+.circle__content ul:last-child a {
+  font-size: 12px;
+}
+
+@media(min-width: 1440px) {
+  .circle__content ul:last-child a {
+    font-size: 26px;
+  }
+}

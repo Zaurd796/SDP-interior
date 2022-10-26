@@ -1,0 +1,73 @@
+.info {
+  max-width: 167px;
+  padding: 12px 8px;
+
+  font-size: 10px;
+  color: var(--color-mineShaft);
+
+  background-color: var(--color-gallery);
+}
+
+.info p {
+  margin: 0;
+}
+
+.info__mail {
+  margin-bottom: 10px;
+}
+
+.info__mail a {
+  text-decoration: none;
+  color: var(--color-mineShaft);
+
+  transition: all 0.3s;
+}
+
+.info__mail a:hover {
+  opacity: 0.6;
+}
+
+.info__mail a:hover {
+  opacity: 0.3;
+}
+
+.info__phone {
+  margin-bottom: 5px;
+}
+
+.info__phone a {
+  font-size: 12px;
+  text-decoration: none;
+  color: var(--color-thunderbird);
+
+  transition: all 0.3s;
+}
+
+.info__phone a:hover {
+  opacity: 0.6;
+}
+
+.info__phone a:hover {
+  opacity: 0.3;
+}
+
+.info .icon-location::before {
+  margin-left: 0;
+
+  color: var(--color-cardinal);
+}
+
+.info__map-link {
+  text-decoration: none;
+  color: var(--color-mineShaft);
+
+  transition: all 0.3s;
+}
+
+.info__map-link:hover {
+  opacity: 0.6;
+}
+
+.info__map-link:active {
+  opacity: 0.3;
+}

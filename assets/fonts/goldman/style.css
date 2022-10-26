@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Goldman";
+  font-display: swap;
+  src: url("goldman.woff2") format("woff2"),
+    url("goldman.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+}
